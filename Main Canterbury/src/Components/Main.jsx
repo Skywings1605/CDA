@@ -30,6 +30,8 @@ import { ReactGallery } from "./ReactGallery.jsx";
 import { NewGallery } from "./NewGallery.jsx";
 import { ThankYou } from "./ThankYou.jsx";
 import Gallery from "./Gallery.jsx";
+import WindowPopup from "./WindowPopup.jsx";
+
 // import { GalleryNew } from "./DynamicColumn";
 
 import svg1 from "./Images/1.svg"
@@ -59,6 +61,7 @@ export const Main = () => {
                 <Form/>
             </div>
             <div className="eyediv reveal">
+              <WindowPopup/>
                 <h1 className="eyetext">Why choose Canterbury Divine Arc?</h1>
                 <hr id="eyehr"/>
                 <br />
@@ -125,81 +128,8 @@ export const Main = () => {
                       <h4 className="greentxt">Sophisticated plots at the foot of Nandi hills</h4>
                       <p>Canterbury Divine Arc is our Premium land bank with closest proximity to the Clubhouse. It is a great investment option for people who like a modern touch engulfed in natural surroundings.</p>
                       </div>
-                        
-                        {/* <div class="wrap">
-                        <a href={require("./Images/IFB_Eastwood_Brochure.pdf")} download="IFB_Eastwood_Brochure">
-
-                            <button class="button">
-                                Download Brochure
-                            </button>
-                        </a>
-                        </div> */}
 
                     </div>
-                    {/* <div className="rightpro">
-                    <ModalImage
-                      src={a1}
-                      alt={`SMR`}
-                      ratio={`3:2`}
-                    />
-                    <ModalImage
-                      src={a2}
-                      alt={`SMR`}
-                      ratio={`3:2`}
-                    />
-                    <ModalImage
-                      src={a3}
-                      alt={`SMR`}
-                      ratio={`3:2`}
-                    />
-                    <ModalImage
-                      src={a4}
-                      alt={`SMR`}
-                      ratio={`3:2`}
-                    />
-                    <ModalImage
-                      src={a5}
-                      alt={`SMR`}
-                      ratio={`3:2`}
-                    />
-                    <ModalImage
-                      src={a6}
-                      alt={`SMR`}
-                      ratio={`3:2`}
-                    />
-                    <ModalImage
-                      src={a7}
-                      alt={`SMR`}
-                      ratio={`3:2`}
-                    />
-                    <ModalImage
-                      src={a9}
-                      alt={`SMR`}
-                      ratio={`3:2`}
-                    />
-                    <ModalImage
-                      src={a10}
-                      alt={`SMR`}
-                      ratio={`3:2`}
-                    />
-                    <ModalImage
-                      src={a11}
-                      alt={`SMR`}
-                      ratio={`3:2`}
-                    />
-                    <ModalImage
-                      src={a12}
-                      alt={`SMR`}
-                      ratio={`3:2`}
-                    />
-                    <ModalImage
-                      src={a13}
-                      alt={`SMR`}
-                      ratio={`3:2`}
-                    />
-
-
-                    </div> */}
                     <p ></p>
                     </div>
 
