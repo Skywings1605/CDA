@@ -48,21 +48,21 @@ export default function Slides() {
     </div>
     <div class="carousel-item" data-mdb-interval="4000">
       <img src={banner2} class="d-block w-100" alt="Luxury Villa"/>
-      <div class="carousel-caption d-none d-md-block slideh1 firsth1" >
+      {/* <div class="carousel-caption d-none d-md-block slideh1 firsth1" >
         <h1>Come Dive In!!</h1>
-    </div>
+    </div> */}
     </div>
     <div class="carousel-item" data-mdb-interval="4000">
       <img src={banner3} class="d-block w-100" alt="Banner 1"/>
-      <div class="carousel-caption d-none d-md-block slideh1 sech1" >
+      {/* <div class="carousel-caption d-none d-md-block slideh1 sech1" >
         <h1>Canterbury Divine Arc Plots</h1>
-    </div>
+    </div> */}
     </div>
     <div class="carousel-item" data-mdb-interval="4000">
       <img src={banner4} class="d-block w-100" alt="Plots"/>
-      <div class="carousel-caption d-none d-md-block slideh1 thirdh1">
+      {/* <div class="carousel-caption d-none d-md-block slideh1 thirdh1">
         <h1>Complete Canterbury Divine Arc Plots View</h1>
-    </div>
+    </div> */}
       
     </div>
     
