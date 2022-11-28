@@ -14,7 +14,7 @@ import { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import fileDownload from 'js-file-download'
 import brochure from "./Files/Canterbury_brochure.pdf";
-import "./Dialog.css"
+import "./Dialog.css";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -74,18 +74,9 @@ export default function CustomizedDialogs() {
 
   const [submit, setSubmit] = useState(false)
 
-  useEffect(() => {
-      if(submit) {
-    navigate("/thankyou")
-      }
-  }, [])
-// console.log("typeof email is", typeof(email) )
   // submit event
   const handleSubmit=(e)=>{
-    // e.preventDefault();
-    // console.log(name, phone, email);
 
-    // our object to pass
     const data = {
       Name:name,
       Email:email,
@@ -104,20 +95,6 @@ export default function CustomizedDialogs() {
     navigate("/thankyou")
   }
 
-
-
-
-
-//   -------POP-UP-------
-
-//   useEffect(()=>{
-//       setTimeout(()=>{
-//         setOpen(true)
-//       }, 2000)
-
-//   },[])
-
-
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -127,7 +104,7 @@ export default function CustomizedDialogs() {
 
   return (
     <div>
-      <Button className='downbtn' style={{color: "white", border: "1px solid blue", textTransform: "capitalize", fontSize:"16px"}} onClick={handleClickOpen}>
+      <Button variant="outlined" style={{textTransform: "capitalize", fontSize:"16px", color:"blue",fontWeight:"700"}} onClick={handleClickOpen} className='btndown'>
         Download Brochure
       </Button>
       <BootstrapDialog

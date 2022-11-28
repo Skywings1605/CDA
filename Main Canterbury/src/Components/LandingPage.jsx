@@ -3,7 +3,6 @@ import { Navbar } from './Navbar';
 import { Main } from './Main';
 import Nav from "./Nav.jsx"
 import { Form } from './Form';
-// import { SocialFollow } from './SociaFollow';
 
 
 export const LandingPage = () => {

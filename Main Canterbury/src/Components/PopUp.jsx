@@ -1,12 +1,9 @@
 import React from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import { Form } from './Form';
 import {useState,useEffect} from 'react'
 import axios from 'axios'
 import "./PopUp.css"
-import { ThankYou } from './ThankYou';
-import { Link } from 'react-router-dom';
 import CustomizedDialogs from "./Dialog.jsx";
 
 

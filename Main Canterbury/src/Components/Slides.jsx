@@ -1,15 +1,12 @@
 import React from 'react';
 import"./Slides.css"
-import banner1 from "./Images/homebanner.png"
-import banner2 from "./Images/clubhouse.png"
-import banner3 from "./Images/plot1.png"
-import banner4 from "./Images/path.png"
+import banner1 from "./Images/homebanner.webp"
+import banner2 from "./Images/clubhouse.webp"
+import banner3 from "./Images/plot1.webp"
+import banner4 from "./Images/path.webp";
 
-import {
-  MDBCarousel,
-  MDBCarouselItem,
-  MDBIcon,
-} from 'mdb-react-ui-kit';
+import leftarrow from "./Images/leftarrow.webp";
+import rightarrow from "./Images/rightarrow.webp";
 
 export default function Slides() {
   return (
@@ -44,35 +41,24 @@ export default function Slides() {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-mdb-interval="4000">
-      <img src={banner1} class="d-block w-100" alt="Eastwood banner"/>
+      <img src={banner1} class="d-block w-100" alt="banner"/>
     </div>
     <div class="carousel-item" data-mdb-interval="4000">
       <img src={banner2} class="d-block w-100" alt="Luxury Villa"/>
-      {/* <div class="carousel-caption d-none d-md-block slideh1 firsth1" >
-        <h1>Come Dive In!!</h1>
-    </div> */}
     </div>
     <div class="carousel-item" data-mdb-interval="4000">
       <img src={banner3} class="d-block w-100" alt="Banner 1"/>
-      {/* <div class="carousel-caption d-none d-md-block slideh1 sech1" >
-        <h1>Canterbury Divine Arc Plots</h1>
-    </div> */}
     </div>
     <div class="carousel-item" data-mdb-interval="4000">
       <img src={banner4} class="d-block w-100" alt="Plots"/>
-      {/* <div class="carousel-caption d-none d-md-block slideh1 thirdh1">
-        <h1>Complete Canterbury Divine Arc Plots View</h1>
-    </div> */}
-      
     </div>
     
   </div>
   <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
-  <img style={{width: "30px"}} src={"https://cdn-icons-png.flaticon.com/512/2985/2985162.png"} alt="" />
-    {/* <span class="carousel-control-prev-icon" aria-hidden="true"></span> */}
+  <img style={{width: "30px"}} src={leftarrow} alt="" />
   </button>
   <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="next">
-  <img style={{width: "30px"}} src={"https://cdn-icons-png.flaticon.com/512/1549/1549454.png"} alt="" />
+  <img style={{width: "30px"}} src={rightarrow} alt="" />
   </button>
 </div>
   );

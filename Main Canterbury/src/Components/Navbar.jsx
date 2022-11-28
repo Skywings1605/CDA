@@ -1,13 +1,11 @@
 import "./Navbar.css";
 import logo from "./Images/logo.svg"
-import { PopupDiv } from "./PopUp"
-import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import { Form } from './Form';
 import {useState,useEffect} from 'react'
 import axios from 'axios'
 import "./PopUp.css";
 import CustomizedDialogs from "./Dialog.jsx";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 export const Navbar = () => {
      // form states
   const [name, setName]=useState('');
@@ -41,7 +39,7 @@ export const Navbar = () => {
     return (
         <div className="navbar">
             <div className="leftnav">
-                <img className="logo" src={logo} alt="" />
+                <LazyLoadImage className="logo" src={logo} alt="" />
             </div>
             <div className="rightnav">
                 <a className="anav" href="#">Home</a>

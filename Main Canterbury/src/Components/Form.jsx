@@ -1,8 +1,8 @@
 import {useState,useEffect} from 'react'
 import axios from 'axios'
 import "./Form.css"
-import { ThankYou } from './ThankYou'
 import { Link, useNavigate } from 'react-router-dom'
+
 
 export const Form = () => {
   const [submit, setSubmit] = useState(false)
@@ -77,7 +77,7 @@ export const Form = () => {
         />
         <br></br>
         <div style={{display:"flex",justifyContent:'flex-end'}}>
-        <button type='submit' className='btn btn-primary'>
+        <button type='submit' className='btn btn-primary' style={{backgroundColor:"blue"}}>
              {name != "" && phone != "" && email != "" ? "Submit":"Submit"}</button>
         </div>
       </form>

@@ -1,29 +1,22 @@
 import * as React from 'react';
-import "./Nav.css"
-import Box from '@mui/material/Box';
+import "./Nav.css";
 import logo from "./Images/logo.svg"
 import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import {useState,useEffect} from 'react'
 import axios from 'axios';
-import Popup from 'reactjs-popup';
 import "./PopUp.css";
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
 import PersonAdd from '@mui/icons-material/PersonAdd';
-import Settings from '@mui/icons-material/Settings';
-import Logout from '@mui/icons-material/Logout';
 import Home from '@mui/icons-material/Home';
-import Gallery from '@mui/icons-material/Photo';
 import Event from '@mui/icons-material/EventNote';
 import SvgIcon from '@mui/material/SvgIcon';
-import styled from "styled-components"
-import { PopupDiv } from './PopUp';
 import CustomizedDialogs from "./Dialog.jsx";
+import menuicon from "./Images/menuicon.png"
 
 
 export default function AccountMenu() {
@@ -104,7 +97,7 @@ export default function AccountMenu() {
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
           >
-            <Typography sx={{ minWidth: 70, right: 0 }}><a className='menuicon'><img src={"https://cpng.pikpng.com/pngl/s/425-4251166_menu-bar-icon-white-clipart.png"}className="stlogo" alt="" /></a></Typography>
+            <Typography sx={{ minWidth: 70, right: 0 }}><a className='menuicon'><img src={menuicon} className="stlogo" alt="" /></a></Typography>
           </IconButton>
         </Tooltip>
         <Typography sx={{ minWidth: 70 }}> <CustomizedDialogs/></Typography>
